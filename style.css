@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-align: center;
+  font-family: sans;
+  font-size: 100px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.heh {
+  text-align: center;
+  font-size: 50px;
+}
+
+.background-1 {
+  background-image: url('images/background1.jpg');
+  background-repeat: no-repeat; /* Mencegah gambar berulang */
+  background-size: cover; /* Untuk mengisi elemen dengan gambar */
+}
+
+.background-2 {
+  background-image: url('images/background2.jpg');
+  background-repeat: no-repeat; /* Mencegah gambar berulang */
+  background-size: cover; /* Untuk mengisi elemen dengan gambar */
+}
+
+.background-3 {
+  background-image: url('images/background3.jpg');
+  background-repeat: no-repeat; /* Mencegah gambar berulang */
+  background-size: cover; /* Untuk mengisi elemen dengan gambar */
+}
+
+.wrapper {background-color: #FFFFFF};
+
+/* Gaya dasar menu navigasi */
+#menu ul {
+  background-color: #000; /* Warna latar belakang hitam */
+  list-style-type: none; /* Hilangkan tanda bullet pada daftar */
+  padding: 0; /* Hilangkan padding bawaan */
+  overflow: hidden; /* Untuk mengatasi float */
+  text-align: center; /* Pusatkan tautan menu */
+}
+
+/* Gaya untuk tautan menu */
+#menu ul li {
+  display: inline; /* Tautan berjalan secara horizontal */
+  margin: 0; /* Hilangkan margin bawaan */
+}
+
+#menu ul li a {
+  font-size: 16px; /* Ukuran teks */
+  color: white; /* Warna teks */
+  text-align: center; /* Pusatkan teks */
+  padding: 14px 16px; /* Ruang di sekitar tautan */
+  text-decoration: none; /* Hapus garis bawah */
+  background-color: #000; /* Warna latar belakang hitam untuk tautan */
+}
+
+/* Gaya untuk tautan menu saat disorot */
+#menu ul li a:hover {
+  background-color: #333; /* Warna latar belakang saat disorot */
+}
+
+/* Gaya untuk tautan menu yang aktif atau terpilih */
+#menu ul li a.active {
+  background-color: #4CAF50; /* Warna latar belakang aktif */
+  color: white; /* Warna teks aktif */
+}
+
+/* Membuat tautan menu sebar ke kiri dan kanan */
+#menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+#menu ul li {
+  margin: 0 20px; /* Ruang antara tautan menu */
+}
