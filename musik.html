@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pemutar Musik dengan Lirik</title>
+    <link rel="stylesheet" type="text/css" href="musik.css">
+</head>
+<body>
+    <h1>Pemutar Musik dengan Lirik</h1>
+    <div class="musik-container">
+        <div id="musik-info">
+            <h2>Judul Lagu</h2>
+            <p>Artis</p>
+        </div>
+        <audio controls id="audioPlayer" src=""></audio>
+    </div>
+    <div id="lirik-container"></div>
+    <ul id="daftarMusik">
+        <li><button onclick="putarMusik('music/Enchanted.mp3', lirikLagu1)">Enchanted</button></li>
+        <li><button onclick="putarMusik('musik2.mp3', lirikLagu2)">Lagu 2</button></li>
+        <!-- Tambahkan lebih banyak lagu jika diperlukan -->
+    </ul>
+    <script src="musik.js"></script>
+</body>
+</html>
