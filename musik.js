@@ -8,6 +8,24 @@ const lirikLagu1 = `
 const lirikLagu2 = `
 `;
 
+const lirikLagu3 = `
+`;
+
+const lirikLagu4 = `
+`;
+
+const lirikLagu5 = `
+`;
+
+const lirikLagu6 = `
+`;
+
+const lirikLagu7 = `
+`;
+
+const lirikLagu8 = `
+`;
+
 function putarMusik(sumberMusik, lirik) {
     audioPlayer.src = sumberMusik;
     lirikDiv.innerHTML = lirik;
